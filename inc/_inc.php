@@ -16,13 +16,13 @@ include(INC_PATH . "helpers.php");
 /* Priority Medium */
 
 /* Priority low */
+include(INC_PATH . "style-login.php");
 include(INC_PATH . "googleanalytics.php");
 include(INC_PATH . "opengraph.php");
 include(INC_PATH . "seo.php");
 
 /* Admin area */
 if( is_admin() ) {
-	include(INC_PATH . "style-login.php");
 }
 
 ?>
