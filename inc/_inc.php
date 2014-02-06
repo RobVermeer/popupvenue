@@ -7,7 +7,7 @@ $site_version = get_option("site_version");
 $version = 0;
 
 if( $site_version != $version ) {
-	update_option("cb_version", $version);
+	update_option("site_version", $version);
 }
 
 /* Priority HIGH */
