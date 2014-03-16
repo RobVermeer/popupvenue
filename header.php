@@ -20,3 +20,23 @@
 </head>
 
 <body <?php body_class("no-js"); ?>>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<section class="logo col-md-7 col-sm-6">
+					<a href="<?php bloginfo("url"); ?>" title="<?php bloginfo("name"); ?>"><img src="<?php bloginfo("template_url"); ?>/img/logo.png" alt="<?php _e("PopupVenue", 'puv'); ?>" width="229" height="62"></a>
+					<span class="beta">beta</span>
+				</section>
+				<nav class="member col-md-5 col-sm-6 hidden-xs">
+					<?php if( is_user_logged_in() ) : ?>
+						<?php get_template_part('partials/nav', 'logged-in'); ?>
+					<?php else : ?>
+						<?php get_template_part('partials/nav', 'logged-out'); ?>
+					<?php endif; ?>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<?php get_template_part('partials/nav', 'bar'); ?>
