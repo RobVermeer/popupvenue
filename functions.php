@@ -21,7 +21,7 @@ remove_all_filters('edit_profile_url');
 add_theme_support('post-thumbnails');
 add_image_size('featured', 140, 106, true);
 
-/* This theme uses wp_nav_menu() *
+/* This theme uses wp_nav_menu() */
 add_theme_support('nav_menus');
 register_nav_menus( array(
 	'header' => 'Header navigatie',
